@@ -65,11 +65,11 @@ int main()
 	push(&s, 2);
 	push(&s, 1);
 
-	printf("peek: %d\n", peek(&s));
-	printf("pop: %d\n", pop(&s));
-	printf("pop: %d\n", pop(&s));
-	printf("pop: %d\n", pop(&s));
+	printf("peek: %d\n", peek(&s)); //1
+	printf("pop: %d\n", pop(&s)); //1
+	printf("pop: %d\n", pop(&s)); //2
+	printf("pop: %d\n", pop(&s));//3
 
-	printf("pop: %d", pop(&s));
+	printf("pop: %d", pop(&s)); //스택이 비었으므로 오류메시지 출력
 	return 0;
 }
